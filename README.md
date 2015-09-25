@@ -5,33 +5,42 @@ JSON object returned will be of the format
 <pre>
 [
    {
-      "_username" : "user",
-      "_log" : "sample/tac.acct",
+      "username" : "user",
+      "log" : "sample/tac.acct",
       "cmd" : "aaa accounting exec default start-stop group tacacs+ <cr>",
-      "_nas_name" : "10.200.201.71",
-      "_nas_port" : "tty0",
+      "nas_name" : "10.200.201.71",
+      "nas_port" : "tty0",
       "task_id" : "2",
       "service" : "shell",
       "priv-lvl" : "15",
-      "_nac_address" : "async",
-      "_time" : "Sep 24 16:08:12",
-      "timezone" : "UTC",
-      "_acct_type" : "stop"
+      "nac_address" : "async",
+      "time" : "2015/09/24 16:08:12",
+      "imezone" : "UTC",
+      "acct_type" : "stop"
    },
    ...
    {
       "cmd" : "show privilege <cr>",
-      "_log" : "filename_first.acct",
-      "_nac_address" : "172.22.107.230",
+      "log" : "filename_first.acct",
+      "nac_address" : "172.22.107.230",
       "task_id" : "64",
       "service" : "shell",
-      "_nas_port" : "tty194",
-      "_nas_name" : "10.200.201.71",
-      "_acct_type" : "stop",
-      "_username" : "ADMIN",
+      "nas_port" : "tty194",
+      "nas_name" : "10.200.201.71",
+      "acct_type" : "stop",
+      "username" : "ADMIN",
       "priv-lvl" : "1",
-      "_time" : "Sep 24 16:44:07",
+      "time" : "2015/09/24 16:44:07",
       "timezone" : "UTC"
    }
 ]
 </pre>
+
+-----------------
+Changes
+---------------
+* 09/25/2015 - support multiple date formats of various tac_plus accounting log files
+
+
+---------------
+
