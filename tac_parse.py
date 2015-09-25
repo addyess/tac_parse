@@ -42,6 +42,11 @@ def parse(file_obj, m_year=1900):
     for row in reader:
         row.update(dict(r.split('=') for r in row['__arguments__']))
         row['time'] = parse_date(row['time'])
+
+        # remove aggrivating ' <cr>' at the end of every cmd statement
+        if row.has_key('cmd') and row['cmd'].endswith(' <cr>') :
+            row['cmd'] = row['cmd'][:-len(' <cr>')] 
+
         del row['__arguments__'] 
         log.append(row)
     return log

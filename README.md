@@ -7,7 +7,7 @@ JSON object returned will be of the format
    {
       "username" : "user",
       "log" : "sample/tac.acct",
-      "cmd" : "aaa accounting exec default start-stop group tacacs+ <cr>",
+      "cmd" : "aaa accounting exec default start-stop group tacacs+",
       "nas_name" : "10.200.201.71",
       "nas_port" : "tty0",
       "task_id" : "2",
@@ -20,7 +20,7 @@ JSON object returned will be of the format
    },
    ...
    {
-      "cmd" : "show privilege <cr>",
+      "cmd" : "show privilege",
       "log" : "filename_first.acct",
       "nac_address" : "172.22.107.230",
       "task_id" : "64",
